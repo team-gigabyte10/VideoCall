@@ -13,7 +13,7 @@
         android:theme="@style/Theme.VideoCall"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".FirstActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.VideoCall">
@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

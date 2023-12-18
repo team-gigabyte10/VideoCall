@@ -1,28 +1,18 @@
 package com.nayem.videocall
-
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Text
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.onSizeChanged
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.lifecycle.lifecycleScope
 import io.getstream.video.android.compose.permission.LaunchCallPermissions
 import io.getstream.video.android.compose.theme.VideoTheme
@@ -31,10 +21,7 @@ import io.getstream.video.android.compose.ui.components.call.controls.ControlAct
 import io.getstream.video.android.compose.ui.components.call.controls.actions.FlipCameraAction
 import io.getstream.video.android.compose.ui.components.call.controls.actions.ToggleCameraAction
 import io.getstream.video.android.compose.ui.components.call.controls.actions.ToggleMicrophoneAction
-import io.getstream.video.android.compose.ui.components.call.renderer.FloatingParticipantVideo
-import io.getstream.video.android.compose.ui.components.video.VideoRenderer
 import io.getstream.video.android.core.GEO
-import io.getstream.video.android.core.RealtimeConnection
 import io.getstream.video.android.core.StreamVideoBuilder
 import io.getstream.video.android.model.User
 import kotlinx.coroutines.launch
@@ -44,8 +31,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val userToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiR2VuZXJhbF9Eb2Rvbm5hIiwiaXNzIjoiaHR0cHM6Ly9wcm9udG8uZ2V0c3RyZWFtLmlvIiwic3ViIjoidXNlci9HZW5lcmFsX0RvZG9ubmEiLCJpYXQiOjE3MDI4MDE0NDAsImV4cCI6MTcwMzQwNjI0NX0.PXmp99tq1QEpxJr0s0JjJpBPD4coIsT9UpjCMGMMNiQ"
-        val userId = "General_Do donna"
-        val callId = "KRhOXyGo8sYV"
+        val userId = "General_Crix_Madine"
+        val callId = "DHYI5iYzvpTJ"
 
         // step1 - create a user.
         val user = User(
@@ -112,7 +99,7 @@ class MainActivity : ComponentActivity() {
                             )
                         )
                     }
-                    
+
                 )
             }
         }
